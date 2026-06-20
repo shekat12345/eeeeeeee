@@ -1,0 +1,6 @@
+{
+  "name": "Premium Business Showcase",
+  "description": "An interactive, premium business showcase with smooth parallax scrolling, immersive background video, and complete React Native codebase exporter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
