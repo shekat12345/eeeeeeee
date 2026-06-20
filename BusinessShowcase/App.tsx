@@ -575,7 +575,7 @@ const styles = StyleSheet.create({
     bottom: 40,
   },
   heroSpacing: {
-    height: -60, // Slight negative bias for scroll engagement
+    height: 0,
   },
   cardContainer: {
     paddingHorizontal: 16,
@@ -586,7 +586,6 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderWidth: 1.5,
     padding: 24,
-    backdropFilter: 'blur(20px)', // Only functional in iOS, fallback gracefully in Android
   },
   sectionTitle: {
     fontSize: 11,
@@ -600,7 +599,7 @@ const styles = StyleSheet.create({
     color: 'rgba(255, 255, 255, 0.75)',
     lineHeight: 25,
     letterSpacing: 0.5,
-    textAlign: 'justify',
+    textAlign: 'left',
   },
   servicesSection: {
     paddingHorizontal: 16,

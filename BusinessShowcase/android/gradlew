@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+# Helper script for running Gradle builds in Unix environments
+DIRNAME=`dirname "$0"`
+APP_BASE_NAME=`basename "$0"`
+APP_HOME=`cd "$DIRNAME" >/dev/null; pwd`
+
+exec "$APP_HOME/gradlew" "$@"
