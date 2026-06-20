@@ -1,0 +1,23 @@
+platform :ios, '13.4'
+prepare_react_native_project!
+
+target 'BusinessShowcase' do
+  config = use_native_modules!
+
+  # Flags to enable New Architecture (Fabric and TurboModules)
+  # Set to true if you are building with React Native 0.74+ New Architecture
+  use_react_native!(
+    :path => "../node_modules/react-native",
+    :hermes_enabled => true
+  )
+
+  target 'BusinessShowcaseTests' do
+    inherit! :complete
+  end
+
+  post_install do |installer|
+    # Optimize React Native Reanimated setup
+    react_native_post_install(installer)
+    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+  end
+end
